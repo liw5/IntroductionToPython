@@ -35,17 +35,16 @@ Crazy_Turtle_1 = rg.SimpleTurtle('turtle')
 Crazy_Turtle_1.pen = rg.Pen('red', 4)
 Crazy_Turtle_1.speed = 20
 
+Crazy_Turtle_2 = rg.SimpleTurtle('turtle')
+Crazy_Turtle_2.pen = rg.Pen('blue', 2)
+Crazy_Turtle_2.speed = 20
+
 for k in range(12):
     Crazy_Turtle_1.draw_circle((12 - k) * 10)
     Crazy_Turtle_1.pen_up()
     Crazy_Turtle_1.right(30)
     Crazy_Turtle_1.pen_down()
 
-Crazy_Turtle_2 = rg.SimpleTurtle('turtle')
-Crazy_Turtle_2.pen = rg.Pen('blue', 2)
-Crazy_Turtle_2.speed = 20
-
-for k in range(12):
     Crazy_Turtle_2.backward((12 - k) * 10)
     Crazy_Turtle_2.draw_square((12 - k) * 20)
     Crazy_Turtle_2.pen_up()
